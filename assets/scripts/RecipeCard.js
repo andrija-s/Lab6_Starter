@@ -131,7 +131,7 @@ class RecipeCard extends HTMLElement {
        inner_s1.innerText = rating_val;
        div_rating.appendChild(inner_s1);
        const inner_img = document.createElement('img');
-       inner_img.setAttribute('src', `https://github.com/andrija-s/Lab6_Starter/blob/main/assets/images/icons/${num_rating}-star.svg`);
+       inner_img.setAttribute('src', `https://raw.githubusercontent.com/andrija-s/Lab6_Starter/main/assets/images/icons/${num_rating}-star.svg`);
        inner_img.setAttribute('alt', `${num_rating} stars`);
        div_rating.appendChild(inner_img);
        const inner_s2 = document.createElement('span');
