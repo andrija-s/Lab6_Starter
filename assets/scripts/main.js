@@ -48,12 +48,14 @@ async function fetchRecipes() {
         // in the recipes folder and fetch them from there. You'll need to add their paths to the recipes array.
 
         // Part 1 Expose - TODO
+        let counter = 0;
         for (let recipe of recipes) {
             fetch(recipe)
                 .then(response => response.json())
                 .then(data => {
                     recipeData[recipe] = data;
-                    if (recipes.length === Object.keys(recipeData).length) resolve(true);
+                    counter++;
+                    if (recipes.length === counter) resolve(true);
                 })
                 .catch(err => { console.log(err);
                                 reject(false) });
