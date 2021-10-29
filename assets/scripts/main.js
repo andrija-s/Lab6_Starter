@@ -41,8 +41,7 @@ async function fetchRecipes() {
       const temp = await fetch(recipe);
       if (temp.ok) {
          count++;
-         const ok = await temp.json();
-         recipeData[recipe] = ok;
+         recipeData[recipe] = await temp.json();;
       } else break;
    }
    return new Promise((resolve, reject) => {
