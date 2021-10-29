@@ -36,6 +36,15 @@ async function init() {
 }
 
 async function fetchRecipes() {
+   let count = 0;
+   for (let recipe of recipes) {
+      const temp = await fetch(recipe);
+      if (temp.ok) {
+         count++;
+         const ok = await temp.json();
+         recipeData[recipe] = ok;
+      } else break;
+   }
    return new Promise((resolve, reject) => {
       // This function is called for you up above
       // From this function, you are going to fetch each of the recipes in the 'recipes' array above.
@@ -48,29 +57,11 @@ async function fetchRecipes() {
       // in the recipes folder and fetch them from there. You'll need to add their paths to the recipes array.
 
       // Part 1 Expose - TODO
-      fetchHelper()
-         .then(result => {
-            if (recipes.length === result) resolve(true);
-            else reject(false);
-         });
+      if (recipes.length === count) resolve(true);
+      else reject(false);
 
    });
 }
-
-async function fetchHelper() {
-   let count = 0;
-   for (let recipe of recipes) {
-      const temp = await fetch(recipe);
-      if (temp.ok) {
-         count++;
-         const ok = await temp.json();
-         recipeData[recipe] = ok;
-      }
-      else break;
-   }
-   return count;
-}
-
 function createRecipeCards() {
    // This function is called for you up above.
    // From within this function you can access the recipe data from the JSON 
