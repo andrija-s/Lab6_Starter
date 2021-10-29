@@ -1,0 +1,181 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.recipetineats.com/#organization",
+      "name": "RecipeTin Eats",
+      "url": "https://www.recipetineats.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://www.recipetineats.com/#logo",
+        "inLanguage": "en-US"
+      },
+      "image": {
+        "@id": "https://joyfoodsunshine.com/#logo"
+      }
+    },
+    {
+      "@type": "ImageObject",
+      "@id": "https://www.recipetineats.com/wp-content/uploads/2020/10/Roasted-Pumpkin-with-Yogurt-Sauce_2-SQ.jpg?resize=323,323", 
+      "inLanguage": "en-US",
+      "url": "https://www.recipetineats.com/wp-content/uploads/2020/10/Roasted-Pumpkin-with-Yogurt-Sauce_2-SQ.jpg?resize=323,323",
+      "contentUrl": "https://www.recipetineats.com/wp-content/uploads/2020/10/Roasted-Pumpkin-with-Yogurt-Sauce_2-SQ.jpg?resize=323,323",
+      "width": 1199,
+      "height": 1199
+    },
+    {
+      "@type": [
+        "WebPage",
+        "FAQPage"
+      ],
+      "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#webpage",
+      "url": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/",
+      "name": "Roasted Pumpkin with Yogurt Sauce and Pine Nuts",
+      "isPartOf": {
+        "@id": "https://www.recipetineats.com/#website"
+      },
+      "primaryImageOfPage": {
+        "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#primaryimage"
+      },
+      "datePublished": "2021-10-27T11:00:40+00:00",
+      "dateModified": "2021-10-22T22:24:48+00:00",
+      "description": "Roasted Pumpkin with Yogurt Sauce and Pine Nuts",
+      "breadcrumb": {
+        "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#breadcrumb"
+      },
+      "inLanguage": "en-US",
+      "potentialAction": [
+        {
+          "@type": "ReadAction",
+          "target": [
+            "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#breadcrumb"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#article",
+      "isPartOf": {
+        "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#webpage"
+      },
+      "headline": "Roasted Pumpkin with Yogurt Sauce and Pine Nuts",
+      "datePublished": "2021-10-27T11:00:40+00:00",
+      "dateModified": "2021-10-22T22:24:48+00:00",
+      "publisher": {
+        "@id": "https://www.recipetineats.com/#organization"
+      },
+      "image": {
+        "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#primaryimage"
+      },
+      "thumbnailUrl": "https://www.recipetineats.com/wp-content/uploads/2020/10/Roasted-Pumpkin-with-Yogurt-Sauce_2-SQ.jpg?resize=323,323",
+      "inLanguage": "en-US"
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Recipe",
+      "name": "Roasted Pumpkin with Yogurt Sauce and Pine Nuts",
+      "author": {
+        "@type": "Person",
+        "name": "Nagi"
+      },
+      "recipeYield": [
+        "36",
+        "36 cookies"
+      ],
+      "prepTime": "PT10M",
+      "cookTime": "PT30M",
+      "totalTime": "PT40M",
+      "recipeIngredient": [
+"1.2kg / 2.4 lb pumpkin , skin on seeds in weight (or butternut squash or sweet potato, Note 1)",
+"2 tbsp extra virgin olive oil",
+"1 garlic clove , finely minced using garlic press",
+"1/2 tsp each salt and pepper",
+"3/4 cup Greek yogurt (or other plain, non sweet yogurt)",
+"1/2 small garlic clove, finely minced using garlic press",
+"1 tbsp lemon juice",
+"1 tbsp extra virgin olive oil",
+"1/4 tsp each salt and pepper",
+"2 tbsp pine nuts (or other nuts of choice)",
+"2 tbsp fresh coriander/cilantro leaves , roughly chopped (or parsley)",
+"1/8 tsp sumac (paprika or other theme appropriate spice, Note 2)"
+      ],
+      "recipeInstructions": [
+        {
+          "@type": "HowToStep",
+          "text": "Preheat oven to 220°C/430°F (200°C fan). Line a tray with baking/parchment paper.",
+          "name": "Preheat oven to 220°C/430°F (200°C fan). Line a tray with baking/parchment paper."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Peel, deseed and cut pumpkin into 3cm / 1.2\" cubes – see photos in post for how I do it with little effort. You should end up with about 1 kg – enough to fill a tray.",
+          "name": "Peel, deseed and cut pumpkin into 3cm / 1.2\" cubes – see photos in post for how I do it with little effort. You should end up with about 1 kg – enough to fill a tray."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Place pumpkin in a bowl, add garlic, salt, pepper and olive oil. Toss well using a rubber spatula.",
+          "name": "Place pumpkin in a bowl, add garlic, salt, pepper and olive oil. Toss well using a rubber spatula."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Spread on tray. Roast 20 minutes. Turn pumpkin pieces, then roast a further 7 to 10 minutes until nicely coloured but holding it's shape, rather than being a mushy mess.",
+          "name": "Spread on tray. Roast 20 minutes. Turn pumpkin pieces, then roast a further 7 to 10 minutes until nicely coloured but holding it's shape, rather than being a mushy mess."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Mix ingredients then set aside for at least 10 minutes to let the flavours develop.",
+          "name": "Mix ingredients then set aside for at least 10 minutes to let the flavours develop."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Preheat skillet over medium high heat (no oil). Add pine nuts and cook, stirring regularly, until it smells amazing and it's got a hint of browning on both sides. Remove from pan.",
+          "name": "Preheat skillet over medium high heat (no oil). Add pine nuts and cook, stirring regularly, until it smells amazing and it's got a hint of browning on both sides. Remove from pan."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "Pile the pumpkin in a mound on a plate. Drizzle over yogurt sauce, add a little drizzle of olive oil, then sprinkle with sumac, pine nuts and coriander.",
+          "name": "Pile the pumpkin in a mound on a plate. Drizzle over yogurt sauce, add a little drizzle of olive oil, then sprinkle with sumac, pine nuts and coriander."
+        },
+        {
+          "@type": "HowToStep",
+          "text": "I think it's best served with the pumpkin hot or warm, but for a warm summer day, it is also excellent served at room temperature. Just cool pumpkin, then dress and garnish just before serving.",
+          "name": "I think it's best served with the pumpkin hot or warm, but for a warm summer day, it is also excellent served at room temperature. Just cool pumpkin, then dress and garnish just before serving."
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "ratingCount": "23"
+      },
+      "recipeCategory": [
+        "Food"
+      ],
+      "recipeCuisine": [
+        "American"
+      ],
+      "nutrition": {
+        "@type": "NutritionInformation",
+        "servingSize": "1 muffin",
+        "calories": "201 kcal",
+        "carbohydrateContent": "25 g",
+        "proteinContent": "3 g",
+        "fatContent": "10 g",
+        "cholesterolContent": "51 mg",
+        "fiberContent": "1 g",
+        "sugarContent": "9 g",
+        "saturatedFatContent": "6 g",
+        "sodiumContent": "305 mg"
+      },
+      "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#recipe",
+      "isPartOf": {
+        "@id": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#article"
+      },
+      "mainEntityOfPage": "https://www.recipetineats.com/roasted-pumpkin-with-yogurt-sauce-and-pine-nuts/#webpage"
+    }
+  ]
+}

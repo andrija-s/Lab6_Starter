@@ -3,6 +3,8 @@ class RecipeCard extends HTMLElement {
     // Part 1 Expose - TODO
 
     // You'll want to attach the shadow DOM here
+    super();
+    this.attachShadow({mode: 'open'});
   }
 
   set data(data) {
@@ -100,6 +102,68 @@ class RecipeCard extends HTMLElement {
     // created in the constructor()
 
     // Part 1 Expose - TODO
+    const title_img = document.createElement('img');
+    const url = searchForKey(data, 'thumbnailUrl');
+    title_img.setAttribute('src', url);
+    const headline = searchForKey(data, 'headline');
+    title_img.setAttribute('alt', headline);
+    card.appendChild(title_img);
+
+    const p_title = document.createElement('p');
+    p_title.setAttribute('class', 'title');
+    const name = document.createElement('a');
+    name.setAttribute('href', getUrl(data));
+    name.innerText = headline;
+    p_title.append(name);
+    card.appendChild(p_title);
+
+    const p_org = document.createElement('p');
+    p_org.setAttribute('class', 'organization');
+    p_org.innerText = getOrganization(data);
+    card.appendChild(p_org);
+
+    const div_rating = document.createElement('div');
+    div_rating.setAttribute('class', 'rating');
+    const rating_val = searchForKey(data, 'ratingValue');
+    if(rating_val != null) {
+       const num_rating = Math.round(parseFloat(rating_val));
+       const inner_s1 = document.createElement('span');
+       inner_s1.innerText = rating_val;
+       div_rating.appendChild(inner_s1);
+       const inner_img = document.createElement('img');
+       inner_img.setAttribute('src', `/assets/images/icons/${num_rating}-star.svg`);
+       inner_img.setAttribute('alt', `${num_rating} stars`);
+       div_rating.appendChild(inner_img);
+       const inner_s2 = document.createElement('span');
+       const num = searchForKey(data, 'ratingCount');
+       if (num) {
+          inner_s2.innerText = `(${num})`;
+       }
+       else {
+          inner_s2.innerText = 'NA';
+       }
+       div_rating.appendChild(inner_s2);
+
+    }
+    else {
+       const nothing = document.createElement('span');
+       nothing.innerText = "No Reviews";
+       div_rating.append(nothing);
+    }
+    card.appendChild(div_rating);
+    const timing = document.createElement('time');
+    const time = searchForKey(data, 'cookTime');
+    timing.innerText = convertTime(time);
+    card.appendChild(timing);
+
+    const p_ing = document.createElement('p');
+    p_ing.setAttribute('class', 'ingredients');
+    const text = searchForKey(data, 'recipeIngredient')
+    p_ing.innerText = createIngredientList(text);
+    card.appendChild(p_ing);
+
+    this.shadowRoot.appendChild(styleElem);
+    this.shadowRoot.appendChild(card);
   }
 }
 
