@@ -152,7 +152,7 @@ class RecipeCard extends HTMLElement {
     }
     card.appendChild(div_rating);
     const timing = document.createElement('time');
-    const time = searchForKey(data, 'cookTime');
+    const time = searchForKey(data, 'totalTime');
     timing.innerText = convertTime(time);
     card.appendChild(timing);
 

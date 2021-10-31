@@ -61,6 +61,7 @@ async function fetchRecipes() {
 
    });
 }
+
 function createRecipeCards() {
    // This function is called for you up above.
    // From within this function you can access the recipe data from the JSON 
@@ -94,18 +95,18 @@ function bindShowMore() {
          case 'Show less': {
             for (let i = 0; i < increment; ++i)
                page.removeChild(page.lastChild);
-         };
-         button.innerText = 'Show more';
-         break;
-      case 'Show more': {
-         for (let i = recipes.length - increment; i < recipes.length; ++i) {
-            let new_rec = document.createElement('recipe-card');
-            new_rec.data = recipeData[recipes[i]];
-            page.appendChild(new_rec);
-         }
-      };
-      button.innerText = 'Show less';
-      break;
+            };
+            button.innerText = 'Show more';
+            break;
+         case 'Show more': {
+            for (let i = recipes.length - increment; i < recipes.length; ++i) {
+               let new_rec = document.createElement('recipe-card');
+               new_rec.data = recipeData[recipes[i]];
+               page.appendChild(new_rec);
+            }
+            };
+            button.innerText = 'Show less';
+            break;
       }
 
    });
